@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+
+:root {
+    /* Colors */
+
+    /* Primary - Red */
+    --color-primary: #ef4444;
+
+    /* Primary Dark */
+    --color-primary-dark: #dc2626;
+
+    /* Primary Light */
+    --color-primary-light: #f87171;
+
+
+    /* Secondary - Red এর সাথে matching */
+    --color-secondary: #7c3aed;
+    --color-secondary-dark: #6d28d9;
+    --color-secondary-light: #a78bfa;
+
+
+    /* Text */
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+
+
+    /* Background */
+    --color-white: #ffffff;
+    --color-background: #ffffff;
+
+
+    /* Typography */
+    --font-family: Arial, sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 48px;
+
+
+    /* Font Weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+
+    /* Container */
+    --container--width: 75%;
+    --container-max-width: 1200px;
+    --container-padding: 20px;
+
+
+    /* Shadow */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+
+    /* Transition */
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+}
