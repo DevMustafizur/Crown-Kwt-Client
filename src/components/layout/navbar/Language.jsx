@@ -4,7 +4,7 @@ import { useLanguage } from '../../../context/LanguageContext'
 const Language = () => {
         const { handleLanguageChange, currentLanguage } = useLanguage()
     return (
-        <span onClick={handleLanguageChange} className="language">
+        <span onClick={handleLanguageChange} className="action-language">
             {currentLanguage.name === "English" ? "العربية" : "English"}
         </span>
     )

@@ -2,28 +2,13 @@ import React from 'react'
 
 
 import { User } from 'lucide-react';
-import { Link } from 'react-router'
-import { useAuth } from '../../../context/AuthContext';
-
+import { Link, useLocation } from 'react-router'
 const Account = () => {
-    const { isLoggedIn, login } = useAuth()
-
+    const location = useLocation()
     return (
-        <>
-            {/* Account */}
-            <div>
-                {
-                    isLoggedIn ? <Link
-                        to="/profile"
-                        className="action action--account"
-                        aria-label="Account"
-                    >
-                        <User className="icon" />
-                    </Link> : ""
-                }
-            </div>
-        </>
-
+        <Link to="/profile" className={`action action_user ${location.pathname == "/profile"? "active" : ""}`} aria-label="Account" >
+            <User className="action_icon action-user-icon" />
+        </Link>
     )
 }
 

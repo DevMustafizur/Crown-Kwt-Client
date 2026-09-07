@@ -5,7 +5,6 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [isLoggedIn, setisLoggedIn] = useState(false)
-    const [activePage, setActivePage] = useState("Home")
 
     const login = (userData) => {
         setUser(userData);
@@ -16,17 +15,11 @@ export const AuthProvider = ({ children }) => {
         setUser(null);
     };
 
-    const changeActiveHandler = (value) =>{
-        setActivePage(value)
-    }
-
     return (
         <AuthContext.Provider
             value={{
                 login,
                 isLoggedIn,
-                activePage,
-                changeActiveHandler
             }}
         >
             {children}
