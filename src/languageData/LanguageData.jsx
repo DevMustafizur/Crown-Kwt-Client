@@ -1,6 +1,7 @@
 export const LanguageData = {
     en: {
-        name: "English",
+        name: "en",
+        fullname: "English",
         webName: "Crown",
         webType: "Kwt",
         searchPlaceholder: "Type Your Favourite Cake...",
@@ -20,6 +21,7 @@ export const LanguageData = {
 
     ar: {
         name: "العربية",
+        fullname: "Arabic",
         webName: "تاج",
         webType: "الكويت",
         searchPlaceholder: "اكتب كعككتك المفضلة...",

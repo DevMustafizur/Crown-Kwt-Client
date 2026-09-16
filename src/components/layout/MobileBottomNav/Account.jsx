@@ -7,7 +7,7 @@ const Account = () => {
     const {currentLanguage} = useLanguage()
     return (
         <Link to="/profile" className={`action action-account ${location.pathname == "/profile" ? "active": ""}`} aria-label="Account">
-            <User className="action-icon action-user-icon" />
+            <User className="action-icon action-user-icon" size={20} />
             <span>{currentLanguage.account}</span>
         </Link>
     )

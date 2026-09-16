@@ -6,9 +6,9 @@ const Login = () => {
     const { login } = useAuth()
     const { currentLanguage } = useLanguage()
     return (
-        <Link to="/profile" className="login-action-btn">
-            <span onClick={login}>{currentLanguage.login}</span>
-        </Link>
+        <button className='action login-action-btn'>
+            Login
+        </button>
     )
 }
 

@@ -9,9 +9,11 @@ export const AuthProvider = ({ children }) => {
     const login = (userData) => {
         setUser(userData);
         setisLoggedIn(true)
+        return userData;
     };
 
     const logout = () => {
+        setisLoggedIn(false)
         setUser(null);
     };
 
@@ -20,6 +22,7 @@ export const AuthProvider = ({ children }) => {
             value={{
                 login,
                 isLoggedIn,
+                user
             }}
         >
             {children}

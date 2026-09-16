@@ -1,0 +1,140 @@
+#main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(250, 250, 250, 0.85);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+#main-nav .man-nav_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* WEB-BRAND */
+.man-nav_wrapper .web-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.web-brand .web_brand-image {
+    width: 30px;
+    height: 30px;
+}
+
+.web_brand-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.web-brand .web_brand-title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-normal);
+}
+
+/* search-form */
+.man-nav_wrapper .search-form {
+    max-width: 150px;
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+.search-form .search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: var(--font-size-xs);
+}
+
+.search-form .action-search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* navbar-actions */
+.man-nav_wrapper .navbar-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-actions .action-cart {
+    position: relative;
+}
+
+.action-cart .action-shopCart-icon {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.action-cart .cart-count {
+    position: absolute;
+    color: black;
+    background-color: gray;
+    font-weight: 700;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: var(--font-size-xs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+    right: 0px;
+}
+
+.navbar-actions .dashboard-indecator{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dashboard-indecator .admin-name{
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.dashboard-indecator .action-admin-icon{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 584px) {}
+
+
+
+@media screen and (min-width: 768px) {
+    #main-nav {
+        padding: 20px 0px;
+    }
+
+    /* web-brand */
+    .web-brand .web_brand-image {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* search-form */
+    .man-nav_wrapper .search-form {
+        max-width: 400px;
+    }
+
+    .web-brand .web_brand-title {
+        font-size: var(--font-size-lg);
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {}
