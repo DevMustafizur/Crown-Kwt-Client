@@ -36,7 +36,7 @@ const Navbar = () => {
                                             <User className='action-icon action-user-icon' size={22} />
                                         </Link>
                                     ) : (
-                                        <Link to={'/login'} className='action action-login'>
+                                        <Link to={'/auth/login'} className='action action-login'>
                                             <User className='action-icon action-user-icon' size={22} />
                                         </Link>
                                     )

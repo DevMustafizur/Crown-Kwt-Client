@@ -7,33 +7,17 @@
 
 
 :root {
-    /* Colors */
 
-    /* Primary - Red */
-    --color-primary: #ef4444;
-
-    /* Primary Dark */
-    --color-primary-dark: #dc2626;
-
-    /* Primary Light */
-    --color-primary-light: #f87171;
-
-
-    /* Secondary - Red এর সাথে matching */
-    --color-secondary: #7c3aed;
-    --color-secondary-dark: #6d28d9;
-    --color-secondary-light: #a78bfa;
-
-
-    /* Text */
-    --color-text: #1f2937;
-    --color-text-light: #6b7280;
-
-
-    /* Background */
-    --color-white: #ffffff;
-    --color-background: #ffffff;
-
+    --pink: #e82f7a;
+    --dark: #2c1453;
+    --light: #fff3f8;
+    --border: #e6e6e6;
+    --bg: #f7f3f3;
+    --purple: #6c3eb8;
+    --white: #fff;
+    --black: #000;
+    --gray: #666;
+    --shadow: 0 10px 25px rgba(0,0,0, 0.08)
 
     /* Typography */
     --font-family: Arial, sans-serif;
