@@ -27,10 +27,11 @@
 }
 
 #login .login-controller {
-    max-width: 305px;
+    max-width: 310px;
     width: 100%;
-    padding: 40px 25px;
+    padding: 50px 25px;
     background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .login-controller .login-form {
@@ -74,7 +75,10 @@
 .login-controller .login-signup {
     margin-top: 25px;
 }
-.login-signup .action-signup-btn{
+.login-controller .login-signup p{
+    font-size: 14px;
+}
+.login-signup .action-signup-btn {
     text-decoration: none;
     margin-left: 5px;
     color: #e63636;

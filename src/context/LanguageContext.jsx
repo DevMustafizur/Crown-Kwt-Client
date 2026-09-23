@@ -1,9 +1,10 @@
 import { createContext, useContext, useState } from "react";
-import { LanguageData } from "../languageData/LanguageData";
+import { LanguageData } from "../utilites/different.lan";
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
+    
     const [language, setLanguage] = useState("en");
     const currentLanguage = LanguageData[language]
     const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);

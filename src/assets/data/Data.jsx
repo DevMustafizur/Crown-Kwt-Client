@@ -43,10 +43,6 @@ export const categories = [
 
 export const products = [
 
-    // =========================
-    // Birthday Cakes - 6
-    // =========================
-
     {
         id: "birthday-01",
         name: "Classic Birthday Cake",
@@ -58,8 +54,10 @@ export const products = [
         image: "https://images.pexels.com/photos/1684039/pexels-photo-1684039.jpeg?auto=compress&cs=tinysrgb&w=800",
         shape: [
             "https://images.pexels.com/photos/1684039/pexels-photo-1684039.jpeg?auto=compress&cs=tinysrgb&w=800",
+
             "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=800",
-            "https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&cs=tinysrgb&w=800"
+
+            "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=800",
         ]
     },
 
@@ -467,3 +465,121 @@ export const products = [
         ]
     }
 ];
+
+
+
+export const filterOptions = {
+    categories: [
+        {
+            label: "Birthday Cakes",
+            value: "birthday-cake",
+        },
+        {
+            label: "Wedding Cakes",
+            value: "wedding-cake",
+        },
+        {
+            label: "Chocolate Cakes",
+            value: "chocolate-cake",
+        },
+        {
+            label: "Red Velvet Cakes",
+            value: "red-velvet-cake",
+        },
+        {
+            label: "Vanilla Cakes",
+            value: "vanilla-cake",
+        },
+        {
+            label: "Strawberry Cakes",
+            value: "strawberry-cake",
+        },
+        {
+            label: "Black Forest Cakes",
+            value: "black-forest-cake",
+        },
+        {
+            label: "White Forest Cakes",
+            value: "white-forest-cake",
+        },
+        {
+            label: "Butterscotch Cakes",
+            value: "butterscotch-cake",
+        },
+        {
+            label: "Coffee Cakes",
+            value: "coffee-cake",
+        },
+        {
+            label: "Carrot Cakes",
+            value: "carrot-cake",
+        },
+
+    ],
+
+    prices: [
+        {
+            label: "Under 10 KWD",
+            min: 0,
+            max: 10,
+        },
+        {
+            label: "10 – 20 KWD",
+            min: 10,
+            max: 20,
+        },
+        {
+            label: "20 – 30 KWD",
+            min: 20,
+            max: 30,
+        },
+        {
+            label: "30 – 40 KWD",
+            min: 30,
+            max: 40,
+        },
+        {
+            label: "40+ KWD",
+            min: 40,
+            max: null,
+        },
+    ],
+
+    flavours: [
+        {
+            label: "Chocolate",
+            value: "chocolate",
+        },
+        {
+            label: "Vanilla",
+            value: "vanilla",
+        },
+        {
+            label: "Strawberry",
+            value: "strawberry",
+        },
+        {
+            label: "Red Velvet",
+            value: "red-velvet",
+        },
+    ],
+
+    sizes: [
+        {
+            label: "0.5 kg",
+            value: "0.5",
+        },
+        {
+            label: "1 kg",
+            value: "1",
+        },
+        {
+            label: "1.5 kg",
+            value: "1.5",
+        },
+        {
+            label: "2 kg",
+            value: "2",
+        },
+    ],
+};

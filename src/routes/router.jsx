@@ -6,6 +6,7 @@ import UserLayout from "../layout/user/Layout.jsx";
 import AdminLayout from "../layout/admin/Layout.jsx";
 
 // guest
+import Home from "../pages/guest/home/Home.jsx";
 
 
 
@@ -19,6 +20,9 @@ import MyOrder from "../pages/user/my-order/MyOrder.jsx";
 import OrderTracking from "../pages/user/order-tracking/OrderTracking.jsx";
 import Profile from "../pages/user/profile/Profile.jsx";
 import Usettings from "../pages/user/setting/Usettings.jsx";
+import Category from "../pages/guest/category/Category.jsx";
+import Product from "../pages/guest/product/Product.jsx";
+
 
 
 
@@ -37,7 +41,18 @@ const router = createBrowserRouter([
         Component: GuestLayout,
 
         children: [
-
+            {
+                index: true,
+                Component: Home
+            },
+            {
+                path: "/category/:categorySlug",
+                Component: Category
+            },
+            {
+                path: "/product/:productSlug",
+                Component: Product
+            }
         ],
     },
 

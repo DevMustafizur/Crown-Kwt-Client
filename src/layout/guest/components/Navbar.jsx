@@ -15,10 +15,11 @@ const Navbar = () => {
 
                     {/* nav-main */}
                     <div className="nav-main">
-                        <div className="web-brand">
-                            <div onClick={() => { testLogin() }} className='web_brand-title'>Crown Kwt</div>
-                        </div>
-
+                        <Link to={'/'} className="action logo-action">
+                            <div className="web-brand">
+                                <div onClick={() => { testLogin() }} className='web_brand-title'>Crown Kwt</div>
+                            </div>
+                        </Link>
                         <div className='search-form'>
                             <input type="text" className="search-input" placeholder='Search...' />
                             <Search className="action-icon action-search-icon" size={14} />

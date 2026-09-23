@@ -2,25 +2,34 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: "Poppins", sans-serif;
 }
 
 
 :root {
+    --pink: #ec4899;
+    --pink-dark: #be185d;
+    --pink-light: #f9a8d4;
+    --pink-soft: #fdf2f8;
 
-    --pink: #e82f7a;
-    --dark: #2c1453;
-    --light: #fff3f8;
+
+    --success-dark: #15803d;
+    --success: #22c55e;
+    --success-light: #86efac;
+    --success-soft: #f0fdf4;
+
+    --wrong-dark: #b91c1c;
+    --wrong: #ef4444;
+    --wrong-light: #fca5a5;
+    --wrong-soft: #fef2f2;
+
     --border: #e6e6e6;
     --bg: #f7f3f3;
     --purple: #6c3eb8;
     --white: #fff;
     --black: #000;
     --gray: #666;
-    --shadow: 0 10px 25px rgba(0,0,0, 0.08)
-
-    /* Typography */
-    --font-family: Arial, sans-serif;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
     --font-size-xs: 12px;
     --font-size-sm: 14px;
