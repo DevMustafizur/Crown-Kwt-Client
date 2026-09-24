@@ -7,7 +7,7 @@ const Categories = () => {
             <div className='container'>
                 <div className="categories-main">
                     <header className="category-header">
-                       
+                       <h2>CATEGORIES</h2>
                     </header>
                     <div className='categories-wrapper'>
                         {

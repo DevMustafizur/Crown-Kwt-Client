@@ -6,26 +6,33 @@
 
 /* categories component */
 #categories {
-    padding: 50px 0px;
-    /* background-color: var(--bg); */
+    padding: 10px 0px;
+    padding-bottom: 100px;
 }
 
 #categories .category-header {
     text-align: center;
-    font-size: 30px;
+    font-size: var(--font-size-lg);
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 5px 0px;
+    margin: 25px 0px;
 }
-
+#categories .category-header h2{
+    font-weight: 400;
+    letter-spacing: 5px;
+}
 #categories .categories-wrapper {
     display: flex;
-    flex-direction: column;
-    row-gap: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 /* category-item */
 .categories-wrapper .category-item {
-    width: 100%;
+    width: calc((100% - 15px) / 2);
     border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     cursor: pointer;
     overflow: hidden;
     background-color: white;
@@ -33,14 +40,13 @@
 
 .category-item .category-image {
     width: 100%;
-    height: 210px;
+    height: 140px;
     overflow: hidden;
 }
 
 .category-image img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     object-fit: cover;
     transition: all .3s ease-in-out;
 }
@@ -50,11 +56,12 @@
 }
 
 .category-item .category-info {
-    padding: 30px;
+    padding: 20px;
+    text-align: center;
 }
 
 .category-item .category-info .category-info-name {
-    font-size: 18px;
+    font-size: var(--font-size-md);
 }
 
 .category-item .category-info .category-get-btn {
@@ -67,28 +74,18 @@
     font-size: 12px;
 }
 
-@media screen and (min-width: 584px) {
-    #categories .categories-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 30px;
-    }
-
-    .categories-wrapper .category-item {
-        max-width: calc((100% - 30px) / 2);
-    }
-}
+@media screen and (min-width: 584px) {}
 
 
 
 @media screen and (min-width: 768px) {
     .categories-wrapper .category-item {
-        max-width: calc((100% - 60px) / 3);
+        max-width: calc((100% - 30px) / 3);
     }
 }
 
 @media screen and (min-width: 992px) {
     .categories-wrapper .category-item {
-        max-width: calc((100% - 90px) / 4);
+        max-width: calc((100% - 45px) / 4);
     }
 }

@@ -12,7 +12,7 @@ const Card = ({ card }) => {
             </div>
             <div className="category-info">
                 <h4 className="category-info-name">{card.name}</h4>
-                <button className="category-get-btn">See More</button>
+                {/* <button className="category-get-btn">See More</button> */}
             </div>
         </div>
     )
